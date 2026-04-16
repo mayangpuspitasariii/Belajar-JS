@@ -94,7 +94,7 @@ const tampilaknNilai = () => {
             terbesar = nilai[i]
         }
 
-        total =+ nilai[i]
+        total += nilai[i] //jumlahkan nilainya
     }
      let rata = total /nilai.length
      let jumlah = 0
@@ -102,7 +102,7 @@ const tampilaknNilai = () => {
      for(let i =0; i < nilai.length; i++){
         if(nilai [i] > rata){
             console.log(`Di atas rata-rata : ${nilai[i]}`)
-            jumlah++
+            jumlah++ //jumlahkan banyaknya
         }
      }
      console.log(`Nilai terbesar : ${terbesar}`)
