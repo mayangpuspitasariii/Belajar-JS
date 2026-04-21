@@ -71,7 +71,7 @@ const dataSiswa = () => {
     ]
 
     const filterData = siswa.filter((f) => {
-        return f.nilai < 80
+        return f.nilai >=75
     })
 
     const data = filterData.map((s) => {
@@ -105,8 +105,11 @@ const dataSiswa = () => {
         }
     })
 
- 
-    console.log(data)
+ const hasil = document.getElementById("hasil")
+ const tampil = data.map ((h) => {
+    return `<p>${h.nama} - ${h.status}</p>`
+ })
+    hasil.innerHTML = tampil.join("")
 }
 
 dataSiswa()
