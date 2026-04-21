@@ -1,0 +1,23 @@
+body {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+#tglBtn {
+    background-color: cadetblue;
+    color: black;
+    align-content: center;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-style: italic;
+
+}

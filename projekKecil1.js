@@ -1,22 +1,24 @@
-const updateNilaiSiswa = () => {
-    const siswa = [
-        {nama : "Mayang", nilai : 80, skill : "React"},
-        {nama : "Dilraba", nilai : 90, skill : "Acting"},
-        {nama : "Ega", nilai: 60, skill : "Game"}
-        
+const todoList = () => {
+    const todos = [
+        {id : 1, text: "Belajar Javascript", selesai : false},
+        {id : 2, text: "Belajar React", selesai : false},
+        {id : 3, text: "Belajar Node", selesai : true},
+        {id : 4, text: "Belajar Next", selesai : false},
     ]
-    const poin = siswa.map ((p) => {
-        return {
-            ...p,
-            nilai: p.nilai+5,
-            status : p.nilai >= 70 ? "Lulus" : "Tidak Lulus"
-            
-        }
-    })
+
     
+   const ubah = todos.map((item) => {
+    if(item.selesai === false) {
+        return {
+            ...item,
+            selesai:true
+        }
+    }
+    return item;
+   })
 
-    console.log(poin)
+   console.log(ubah)
 }
+document.getElementById("tglBtn").addEventListener("click", todoList)
 
-updateNilaiSiswa()
-
+todoList()
