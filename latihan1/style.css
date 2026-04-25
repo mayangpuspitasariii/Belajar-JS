@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
