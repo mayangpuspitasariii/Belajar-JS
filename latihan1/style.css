@@ -1,4 +1,4 @@
-.container {
+.color {
     text-align: center;
     margin-top: 100px;
 }
@@ -11,4 +11,35 @@
 .red{
     background-color: red;
     color: white;
+}
+
+button {
+    padding: 8px;
+    font-width: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+}
+
+button:hover{
+    cursor: pointer;
+    animation: 0.5 ease-in-out;
+    background-color: rgb(22, 123, 211);
+    border: none;
+    border-radius: 10px;
+}
+
+.perhitungan {
+    margin: 20px;
+    display: flex;
+}
+
+.input {
+    padding:10px;
+    gap: 10px;
+}
+.arit{
+    display: flex;
+    gap:10px;
+    margin: 5px;
 }

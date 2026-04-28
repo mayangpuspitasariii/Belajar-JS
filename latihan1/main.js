@@ -1,6 +1,14 @@
 let dark = document.getElementById("dark")
 let mode = document.getElementById("mode")
 let red =document.getElementById("red")
+let tambah = document.getElementById("tambah")
+let kurang = document.getElementById("kurang")
+let bagi = document.getElementById("bagi")
+let kali = document.getElementById("kali")
+let inputSatu = document.getElementById("input-satu")
+let inputDua = document.getElementById("inputDua")
+let inputHasil = document.getElementById("inputHasil")
+
 let body = document.body
 
 dark.addEventListener("click", () => {
@@ -29,3 +37,8 @@ red.addEventListener("click", () => {
         red.textContent = "Light Mode"
     }
 })
+
+tambah.addEventListener("click", () => {
+    
+})
+
