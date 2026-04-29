@@ -8,3 +8,13 @@
     background-color: black;
     color: white;
 }
+
+.edit, .hapus, .save, .tambah {
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn{
+    padding: 5px;
+
+}

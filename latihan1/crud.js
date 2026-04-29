@@ -12,9 +12,11 @@ tambah.addEventListener("click", () => {
     span.textContent = input.value
 
     let edit = document.createElement("button")
+    edit.classList.add("edit")
     edit.textContent = "Edit"
 
     let hapus = document.createElement("button")
+    hapus.classList.add("hapus")
     hapus.textContent = "Hapus"
 
     li.appendChild(span)
@@ -36,6 +38,7 @@ tambah.addEventListener("click", () => {
         inputEdit.value = span.textContent
 
         let save = document.createElement("button")
+        save.classList.add("save")
         save.textContent = "Save"
 
         li.replaceChild(inputEdit, span)
